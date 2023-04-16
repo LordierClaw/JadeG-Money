@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.lordierclaw.testapplication'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.lordierclaw.testapplication"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+//    packagingOptions {
+//        pickFirst 'META-INF/DEPENDENCIES'
+//    }
+}
+
+dependencies {
+
+    //UI support
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'androidx.camera:camera-core:1.2.2'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+
+    //UI 3rd
+    implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
+    implementation 'com.github.Spikeysanju:MotionToast:1.4'
+    implementation 'com.github.ibrahimsn98:android-particles:2.0'
+    implementation 'com.zekapp.library:progreswheelview:1.1.5'
+    implementation 'com.github.SimformSolutionsPvtLtd:SSPullToRefresh:1.4'
+    implementation "com.mikepenz:itemanimators:1.1.0"
+    implementation 'com.airbnb.android:lottie:6.0.0'
+
+    //Image
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //API
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'org.ocpsoft.prettytime:prettytime:5.0.4.Final'
+    implementation 'org.jsoup:jsoup:1.15.4'
+
+    //QR Scanner
+    implementation 'com.google.android.gms:play-services-code-scanner:16.0.0'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+    implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:18.2.0'
+
+
+
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:31.2.3')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth:21.3.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-firestore:24.5.0'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+
+    //Real time database
+
+
+    //Keyboard
+    def emojiViewVersion = "1.5.2"
+    def emojiViewProvider = "AppleProvider"
+
+    implementation "io.github.aghajari:AXEmojiView:$emojiViewVersion"
+    implementation "io.github.aghajari:AXEmojiView-$emojiViewProvider:$emojiViewVersion"
+    implementation "io.github.aghajari:AXEmojiView-Microsoft3DProvider:$emojiViewVersion"
+
+
+    // Request
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+}

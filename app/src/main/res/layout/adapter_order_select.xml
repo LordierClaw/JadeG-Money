@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/adapter_food_layout"
+            android:layout_width="match_parent"
+            android:layout_height="104dp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="129dp"
+                android:layout_height="71dp"
+                android:background="#D9D9D9"
+                app:riv_mutate_background="true"
+                app:riv_corner_radius="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/adapter_food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Something to eat"
+                android:textSize="20sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="151dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/adapter_food_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_alignStart="@id/adapter_food_name"
+                android:layout_below="@id/adapter_food_name"
+                android:text="100.000 đ"/>
+            <LinearLayout
+                android:layout_width="97dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:layout_alignStart="@id/adapter_food_price"
+                android:layout_below="@id/adapter_food_price">
+                <ImageView
+                    android:id="@+id/adapter_food_count_decrease_btn"
+                    android:layout_width="23dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/baseline_remove_24"
+                    android:padding="1dp"
+                    android:cropToPadding="true"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/image_border"/>
+                <NumberPicker
+                    android:id="@+id/adapter_food_count_picker"
+                    android:layout_width="51dp"
+                    android:layout_height="22dp"
+                    android:padding="1dp"
+                    android:cropToPadding="true"
+                    android:background="@drawable/image_border"/>
+                <ImageView
+                    android:id="@+id/adapter_food_count_increase_btn"
+                    android:layout_width="23dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/baseline_add_24"
+                    android:padding="1dp"
+                    android:cropToPadding="true"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/image_border"/>
+            </LinearLayout>
+            
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="15dp"
+                android:src="@drawable/btn_remove"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="14dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adapter_client_select_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFC2C2"
+            android:orientation="horizontal">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_toStartOf="@+id/adapter_client_more"
+                android:nestedScrollingEnabled="false"
+                android:focusable="false"/>
+            <ImageView
+                android:id="@+id/adapter_client_more"
+                android:padding="14dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_menu_24"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

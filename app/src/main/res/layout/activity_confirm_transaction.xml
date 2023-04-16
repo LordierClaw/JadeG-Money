@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfirmTransactionActivity">
+
+    <LinearLayout
+        android:background="#E40000"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:tint="@color/white" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:id="@+id/targetnametextview"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/robotobold"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Tóm tắt giao dịch" />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="0dp"
+                    android:textSize="18sp"
+                    android:id="@+id/sotienchuyen"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Số tiền chuyển" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:id="@+id/sotienchuyenvalue"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="200.000đ" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="0dp"
+                    android:textSize="18sp"
+                    android:id="@+id/nguoinhan"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Người nhận" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:id="@+id/nguoinhanvalue"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="DO HOANG VIET" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="0dp"
+                    android:textSize="18sp"
+                    android:id="@+id/nganhangnhan"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Ngân hàng nhận" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:id="@+id/nganhangnhanvalue"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Viettel Money" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="0dp"
+                    android:textSize="18sp"
+                    android:id="@+id/sdtnhan"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Số điện thoại" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:id="@+id/sdtnhanvalue"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="0987654321" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="0dp"
+                    android:textSize="18sp"
+                    android:id="@+id/thongtin"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Thông tin  " />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:id="@+id/thongtinvalue"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="x4 Com ga xa xiu;\n x2 Com bo kho" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="0dp"
+                    android:textSize="18sp"
+                    android:id="@+id/nguontien"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Nguồn tiền" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:id="@+id/nguontienvalue"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Viettel Money" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="0dp"
+                    android:textSize="18sp"
+                    android:id="@+id/phigiaodich"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Phí giao dịch" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:id="@+id/phigiaodichvalue"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="0d" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="bottom|center"
+        android:text="Xác nhận giao dịch"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#E40000"
+        app:cornerRadius="20dp"
+        android:fontFamily="@font/robotobold"
+        android:id="@+id/loginFunction">
+    </com.google.android.material.button.MaterialButton>
+
+
+
+
+
+
+</LinearLayout>

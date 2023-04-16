@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E40000"
+    tools:context=".AuthenActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#E40000"
+        android:layout_weight="0.5">
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name" />
+
+
+    </FrameLayout>
+
+
+
+
+
+    <LinearLayout
+        android:background="@drawable/round_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="22sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:id="@+id/gotosignup"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/robotobold"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập" />
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/emailLoginCardview"
+            app:strokeWidth="1dp"
+            app:strokeColor="#DCDCDC"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="60dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeWidth="0dp"
+                android:textColorHint="@color/black"
+                app:placeholderTextColor="@color/black"
+                app:boxStrokeWidthFocused="0dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/emailLogin"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:autofillHints="emailAddress"
+                    android:hint="Email"
+                    android:textSize="14dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:layout_height="match_parent">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="1dp"
+            app:strokeColor="#DCDCDC"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/passwordLoginCardview"
+            android:layout_height="60dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/black"
+                app:placeholderTextColor="@color/black"
+                app:passwordToggleTint="@color/black"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:passwordToggleEnabled="true"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/passwordLogin"
+                    android:hint="Mật khẩu"
+                    android:textSize="14dp"
+                    android:layout_marginStart="10dp"
+                    android:autofillHints="password"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/robotomedium"
+                    android:layout_height="match_parent">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#5D8AFF"
+            android:id="@+id/forgotPassword"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/blinker"
+            android:layout_height="wrap_content"
+            android:text="Quên tài khoản" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom|center"
+            android:text="Đăng nhập"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:backgroundTint="#E40000"
+            app:cornerRadius="20dp"
+            android:fontFamily="@font/robotobold"
+            android:id="@+id/loginFunction">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="bottom|center"
+
+            android:text="Chưa có tài khoản ? Đăng ký ngay"
+            android:textColor="#E40000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            app:strokeWidth="2dp"
+            app:strokeColor="#E40000"
+            app:cornerRadius="20dp"
+            android:fontFamily="@font/robotobold"
+            android:id="@+id/registerFunction">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

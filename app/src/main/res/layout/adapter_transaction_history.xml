@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/adapter_transaction_name"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Example Transaction..."
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="23dp"/>
+
+        <TextView
+            android:id="@+id/adapter_transaction_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15/04/2023, 08:39"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#ADA9A9"
+            android:layout_alignStart="@id/adapter_transaction_name"
+            android:layout_below="@id/adapter_transaction_name"
+            android:layout_marginTop="13dp"/>
+        
+        <TextView
+            android:id="@+id/adapter_transaction_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="- 100.000đ"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

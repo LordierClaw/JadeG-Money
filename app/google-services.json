@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "851428868473",
+    "project_id": "jadeg-money",
+    "storage_bucket": "jadeg-money.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851428868473:android:70a8c5b69c369599b1efa8",
+        "android_client_info": {
+          "package_name": "com.lordierclaw.testapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851428868473-ngigda5891e7ce3cc0c0tiatt8jg1jor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQM_Tb6Ihjf6nJzKbiuE0RQglUOkvSHuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851428868473-ngigda5891e7ce3cc0c0tiatt8jg1jor.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

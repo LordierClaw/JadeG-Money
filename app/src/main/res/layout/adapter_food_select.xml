@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/adapter_food_select_image"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:background="#B6B6B6"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#FFC2C2"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/adapter_food_select_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Something to eat"
+                    android:textAlignment="center"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/adapter_food_select_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100.000 đ"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/adapter_food_select_checkbox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

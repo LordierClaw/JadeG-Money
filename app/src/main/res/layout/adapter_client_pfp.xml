@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:gravity="center">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/adapter_client_bar_pfp"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:src="@drawable/defaultprofile"/>
+</LinearLayout>

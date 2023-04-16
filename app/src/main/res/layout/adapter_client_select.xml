@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="7dp"
+    android:orientation="horizontal"
+    android:gravity="center|start">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/adapter_client_list_pfp"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginStart="19dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp">
+        <CheckBox
+            android:id="@+id/adapter_client_checkbox"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/adapter_client_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/adapter_client_checkbox"
+            android:layout_marginEnd="20dp"
+            android:text="Mai Đình Công"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>
