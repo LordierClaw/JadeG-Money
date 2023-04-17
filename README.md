@@ -13,6 +13,8 @@
 
 Introducing JadeG Money, a Fintech project that aims to revolutionize the way people transfer money within groups. This application enables quick, convenient, and easy money transfers between individuals through the use of an AI-powered virtual assistant built using a classification tree model and prepared data. Developed in just two days for the Junction X Hackthon Hanoi 2023 competition, JadeG Money received the 1st Runner Up award for the Fintech technology track
 
+![](mockup/3.png)
+
 ### Prerequisites
 
 * To run this software, you need an editor with java support, java - version 11 or higher,android-studio
